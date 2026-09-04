@@ -1,2 +1,3 @@
 # trabajos
-trabajos con pogo
+Nombre: Aarón Barrios
+Email: barriosaaron856@gmail.com
