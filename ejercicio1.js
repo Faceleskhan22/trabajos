@@ -12,10 +12,11 @@ function contrasenaValida(str) {
     }
     return validacion;
 }
+console.log(contrasenaValida2("2Fj(jjbFsuj"));
 
 // 📌 Feedback Docente (Profesor Axel):
-// Muy bien resuelto. Ojo con la llamada original en consola que tenía 'contrasenaValida2' arrojando ReferenceError.
-// Para acostumbrarnos a la estructura limpia de variable auxiliar con retorno único al final te dejo esta alternativa:
+// Ojo con la llamada en consola: habías escrito 'contrasenaValida2' lo que tiraba ReferenceError por el tipado del nombre.
+// Para acostumbrarnos a la estructura limpia de retorno booleano o variable de resultado con retorno único al final:
 
 function contrasenaValida(str) {
     let esValida = false;

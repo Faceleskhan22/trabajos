@@ -5,16 +5,17 @@
 // veces que aparece dicho carácter en el string.
 // ==============================================================================
 
-function numeroDeCaracteres(str, caracter){
+function numeroDeCaracteres(str, caracter) {
     let contador = 0;
-    for(i = 0; i < str.length; i++){
+    for (i = 0; i < str.length; i++) {
 
-        if(str[i] === caracter){
+        if (str[i] === caracter) {
             contador++;
         }
     }
     return contador;
 }
+console.log(numeroDeCaracteres("hola mundo", "o"));
 
 // 📌 Feedback Docente (Profesor Axel):
 // Muy bien resuelto. Ojo: acordate de declarar `let i = 0` en el bucle `for` para evitar la variable global implícita `i`.
@@ -33,4 +34,5 @@ function numeroDeCaracteres(str, caracter) {
 }
 
 console.log(numeroDeCaracteres("hola mundo", "o"));
-console.log(numeroDeCaracteres("javascript", "a"));
+console.log(numeroDeCaracteres("eeee", "e"));
+console.log(numeroDeCaracteres("chau", "z"));

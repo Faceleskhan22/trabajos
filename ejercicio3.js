@@ -10,26 +10,27 @@
 // ==============================================================================
 
 function bmi(peso, altura) {
-    
-    bmi = peso / altura^2;
-    switch(true){
-        
-        case (bmi <18.5):
+
+    bmi = peso / altura ^ 2;
+    switch (true) {
+
+        case (bmi < 18.5):
             console.log("bajo peso");
             break;
-        case (bmi<=18.5 || bmi<=24.9):
+        case (bmi <= 18.5 || bmi <= 24.9):
             console.log("normal");
             break;
-        case(bmi <= 25 ||  bmi <=29.9):
+        case (bmi <= 25 || bmi <= 29.9):
             console.log("sobrepeso")
             break;
-        case(bmi >=30):
-            console.log("obeso"); 
-        break;
-        
+        case (bmi >= 30):
+            console.log("obeso");
+            break;
+
     }
-  return bmi
+    return bmi
 }
+console.log(bmi(64, 1.7));
 
 // 📌 Feedback Docente (Profesor Axel):
 // 1. Atención: En JS el operador ^ es Bitwise XOR, no potencia. Usar (altura ** 2) o Math.pow(altura, 2).
@@ -51,6 +52,7 @@ function bmi(peso, altura) {
     return diagnostico;
 }
 
-console.log(bmi(64, 1.7));
-console.log(bmi(50, 1.75));
-console.log(bmi(90, 1.7));
+console.log(bmi(65, 1.8));
+console.log(bmi(72, 1.6));
+console.log(bmi(52, 1.75));
+console.log(bmi(135, 1.7));

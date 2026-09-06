@@ -4,14 +4,16 @@
 // e imprima cada uno de sus elementos en una línea aparte utilizando la consola.
 // ==============================================================================
 
-function imprimirArreglo(arreglo){
-    for(let i = 0; i < arreglo.length; i++){
+function imprimirArreglo(arreglo) {
+    for (let i = 0; i < arreglo.length; i++) {
         console.log(arreglo[i]);
     }
 
 }
+imprimirArreglo([1, 3, 2, 4]);
 
 // 📌 Feedback Docente (Profesor Axel):
 // Impecable iteración sobre el arreglo.
 
-imprimirArreglo([1, 3, 2, 4]);
+
+imprimirArreglo([1, "Hola", 2, "Mundo"]);
