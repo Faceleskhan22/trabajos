@@ -8,9 +8,10 @@ function imprimirArreglo(arreglo){
     for(let i = 0; i < arreglo.length; i++){
         console.log(arreglo[i]);
     }
+
 }
 
 // 📌 Feedback Docente (Profesor Axel):
-// Impecable iteración sobre el arreglo. Como alternativa moderna vimos `for (const elemento of arreglo)`.
+// Impecable iteración sobre el arreglo.
 
 imprimirArreglo([1, 3, 2, 4]);

@@ -8,12 +8,14 @@
 function sumarRango(numeroInicial, numeroFinal){
     let suma = 0;
     for (let i = numeroInicial ; i <= numeroFinal; i++) {
-        suma = suma + i;
+        suma= suma + i;
+       
     }
     return suma;
 }
 
 // 📌 Feedback Docente (Profesor Axel):
-// Muy bien resuelto el bucle acumulador con `suma = suma + i` (o `suma += i`).
+// Muy bien resuelto. Esta es la estructura limpia de variable acumuladora con retorno único al final.
 
 console.log(sumarRango(1, 5));
+console.log(sumarRango(5, 5));

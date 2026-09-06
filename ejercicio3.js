@@ -10,31 +10,47 @@
 // ==============================================================================
 
 function bmi(peso, altura) {
-    // ⚠️ ATENCIÓN: 1. En JS el operador ^ es Bitwise XOR, no potencia. Usar (altura ** 2) o Math.pow(altura, 2).
-    // 2. Tenías 'bmi = ...' lo que sobrescribía el nombre de la función con un número. Usamos 'const valorBmi = ...'.
-    const valorBmi = peso / (altura ** 2);
-    let resultado = "";
-
+    
+    bmi = peso / altura^2;
     switch(true){
-        case (valorBmi < 18.5):
-            resultado = "Bajo de peso";
+        
+        case (bmi <18.5):
+            console.log("bajo peso");
             break;
-        case (valorBmi >= 18.5 && valorBmi <= 24.9):
-            resultado = "Normal";
+        case (bmi<=18.5 || bmi<=24.9):
+            console.log("normal");
             break;
-        case (valorBmi >= 25 && valorBmi <= 29.9):
-            resultado = "Sobrepeso";
+        case(bmi <= 25 ||  bmi <=29.9):
+            console.log("sobrepeso")
             break;
-        case (valorBmi >= 30):
-            resultado = "Obeso"; 
-            break;
+        case(bmi >=30):
+            console.log("obeso"); 
+        break;
+        
     }
-    return resultado;
+  return bmi
 }
 
 // 📌 Feedback Docente (Profesor Axel):
-// 1. Corregido el operador de potencia (altura ** 2 en lugar de altura ^ 2).
-// 2. Corregida la reasignación de la función (creabas una variable con el mismo nombre 'bmi' que la propia función).
-// 3. Retorno de la función: Debe retornar el String en lugar de hacer solo console.log().
+// 1. Atención: En JS el operador ^ es Bitwise XOR, no potencia. Usar (altura ** 2) o Math.pow(altura, 2).
+// 2. Tenías 'bmi = ...' lo que sobrescribía el nombre de la propia función.
+// Para acostumbrarnos a la estructura limpia de variable auxiliar para guardar el resultado y hacer un único return al final de la función:
 
-console.log("Resultado IMC:", bmi(64, 1.7));
+function bmi(peso, altura) {
+    const indice = peso / (altura ** 2);
+    let diagnostico = "Obeso"; // Valor por defecto
+
+    if (indice < 18.5) {
+        diagnostico = "Bajo de peso";
+    } else if (indice < 25) {
+        diagnostico = "Normal";
+    } else if (indice < 30) {
+        diagnostico = "Sobrepeso";
+    }
+
+    return diagnostico;
+}
+
+console.log(bmi(64, 1.7));
+console.log(bmi(50, 1.75));
+console.log(bmi(90, 1.7));

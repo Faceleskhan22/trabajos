@@ -14,8 +14,19 @@ function contrasenaValida(str) {
 }
 
 // 📌 Feedback Docente (Profesor Axel):
-// 1. Ojo con el nombre en la llamada de consola: tenías 'contrasenaValida2' que arrojaba ReferenceError. Corregido a 'contrasenaValida'.
-// 2. Recomendación de simplificación: Podés retornar directamente el resultado de la comparación booleana sin variables auxiliares ni negar flags:
-// return str === "2Fj(jjbFsuj" || str === "eoZiugBf&g9";
+// Muy bien resuelto. Ojo con la llamada original en consola que tenía 'contrasenaValida2' arrojando ReferenceError.
+// Para acostumbrarnos a la estructura limpia de variable auxiliar con retorno único al final te dejo esta alternativa:
+
+function contrasenaValida(str) {
+    let esValida = false;
+
+    if (str === "2Fj(jjbFsuj" || str === "eoZiugBf&g9") {
+        esValida = true;
+    }
+
+    return esValida;
+}
 
 console.log(contrasenaValida("2Fj(jjbFsuj"));
+console.log(contrasenaValida("eoZiugBf&g9"));
+console.log(contrasenaValida("hola"));

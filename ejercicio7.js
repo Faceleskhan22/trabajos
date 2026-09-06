@@ -7,7 +7,8 @@
 
 function numeroDeCaracteres(str, caracter){
     let contador = 0;
-    for(let i = 0; i < str.length; i++){
+    for(i = 0; i < str.length; i++){
+
         if(str[i] === caracter){
             contador++;
         }
@@ -16,7 +17,20 @@ function numeroDeCaracteres(str, caracter){
 }
 
 // 📌 Feedback Docente (Profesor Axel):
-// 1. Ojo: Declaramos `let i = 0` en el bucle `for` (en tu código original estaba `i = 0` sin `let`, lo que genera una variable global accidental).
-// 2. Excelente uso del contador e incremento `contador++`.
+// Muy bien resuelto. Ojo: acordate de declarar `let i = 0` en el bucle `for` para evitar la variable global implícita `i`.
+// Mantiene una excelente estructura con variable acumuladora y retorno único al final:
+
+function numeroDeCaracteres(str, caracter) {
+    let contador = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === caracter) {
+            contador++;
+        }
+    }
+
+    return contador;
+}
 
 console.log(numeroDeCaracteres("hola mundo", "o"));
+console.log(numeroDeCaracteres("javascript", "a"));
