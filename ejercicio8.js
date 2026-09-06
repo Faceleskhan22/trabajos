@@ -1,3 +1,9 @@
+// ==============================================================================
+// Ejercicio 8: Duplicar Elementos de un Arreglo
+// Consigna: Escribir una función llamada `duplicar` que reciba un arreglo de
+// números y retorne un nuevo arreglo donde cada número esté multiplicado por dos (2).
+// ==============================================================================
+
 function duplicar(arreglo){
     let resultado = [];
     for(let i = 0; i < arreglo.length; i++){

@@ -1,3 +1,10 @@
+// ==============================================================================
+// Ejercicio 1: Contraseña Válida
+// Consigna: Escribir una función llamada `contrasenaValida` que reciba un string
+// y retorne `true` si el string es igual a "2Fj(jjbFsuj" o "eoZiugBf&g9".
+// De lo contrario debe retornar `false`.
+// ==============================================================================
+
 function contrasenaValida(str) {
     let validacion = false;
     if(str === "2Fj(jjbFsuj" || str === "eoZiugBf&g9"){
